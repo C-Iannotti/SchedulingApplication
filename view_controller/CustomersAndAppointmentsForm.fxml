@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_controller.CustomersAndAppointmentsFormController">
+   <children>
+      <Label fx:id="customersLabel" layoutX="22.0" layoutY="33.0" prefHeight="20.0" prefWidth="167.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="appointmentsLabel" layoutX="29.0" layoutY="312.0" prefHeight="20.0" prefWidth="167.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customersTable" layoutX="12.0" layoutY="62.0" prefHeight="215.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="customerIdCustomerTable" prefWidth="58.399996757507324" text="Customer ID" />
+          <TableColumn fx:id="customerNameCustomerTable" prefWidth="110.39999389648438" text="Customer Name" />
+            <TableColumn fx:id="addressCustomerTable" prefWidth="74.4000244140625" text="Address" />
+            <TableColumn fx:id="postalCodeCustomerTable" prefWidth="95.199951171875" text="Postal Code" />
+            <TableColumn fx:id="phoneCustomerTable" prefWidth="76.79998779296875" text="Phone" />
+            <TableColumn fx:id="createDateCustomerTable" prefWidth="94.4000244140625" text="Create Date" />
+            <TableColumn fx:id="lastUpdateCustomerTable" prefWidth="93.60003662109375" text="Last Update" />
+            <TableColumn fx:id="divisionIdCustomerTable" prefWidth="77.5999755859375" text="Division ID" />
+            <TableColumn fx:id="createdByCustomerTable" prefWidth="72.79998779296875" text="Created By" />
+            <TableColumn fx:id="updatedByCustomerTable" prefWidth="100.7999267578125" text="Updated By" />
+        </columns>
+      </TableView>
+      <Button fx:id="addCustomerTable" layoutX="585.0" layoutY="282.0" mnemonicParsing="false" onAction="#addCustomerTableListener" prefHeight="25.0" prefWidth="64.0" text="Add" />
+      <Button fx:id="updateCustomerTable" layoutX="671.0" layoutY="282.0" mnemonicParsing="false" onAction="#updateCustomerTableListener" prefHeight="25.0" prefWidth="64.0" text="Update" />
+      <Button fx:id="deleteCustomerTable" layoutX="755.0" layoutY="282.0" mnemonicParsing="false" onAction="#deleteCustomerTableListener" prefHeight="25.0" prefWidth="64.0" text="Delete" />
+      <Button fx:id="refreshCustomerTable" layoutX="501.0" layoutY="282.0" mnemonicParsing="false" onAction="#refreshCustomerTableListener" prefHeight="25.0" prefWidth="64.0" text="Refresh" />
+      <TableView fx:id="appointmentsTable" layoutX="12.0" layoutY="338.0" prefHeight="215.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="appointmentIdAppointmentsTable" prefWidth="109.60000896453857" text="Appointment ID" />
+          <TableColumn fx:id="titleAppointmentsTable" prefWidth="71.20001220703125" text="Title" />
+            <TableColumn fx:id="descriptionAppointmentsTable" prefWidth="94.39994812011719" text="Description" />
+            <TableColumn fx:id="locationAppointmentsTable" prefWidth="88.79998779296875" text="Location" />
+            <TableColumn fx:id="contactAppointmentsTable" prefWidth="76.79998779296875" text="Contact" />
+            <TableColumn fx:id="typeAppointmentsTable" prefWidth="85.60003662109375" text="Type" />
+            <TableColumn fx:id="startDateTimeAppointmentsTable" prefWidth="101.5999755859375" text="Start DateTime" />
+            <TableColumn fx:id="endDateTimeAppointmentsTable" prefWidth="106.39996337890625" text="End DateTime" />
+            <TableColumn fx:id="customerIdAppointmentsTable" minWidth="0.0" prefWidth="123.2000732421875" text="Customer ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="refreshAppointmentsTable" layoutX="501.0" layoutY="561.0" mnemonicParsing="false" onAction="#refreshAppointmentsTableListener" prefHeight="25.0" prefWidth="64.0" text="Refresh" />
+      <Button fx:id="addAppointmentsTable" layoutX="585.0" layoutY="561.0" mnemonicParsing="false" onAction="#addAppoinmentsTableListener" prefHeight="25.0" prefWidth="64.0" text="Add" />
+      <Button fx:id="updateAppointmentsTable" layoutX="671.0" layoutY="561.0" mnemonicParsing="false" onAction="#updateAppointmentsTableListener" prefHeight="25.0" prefWidth="64.0" text="Update" />
+      <Button fx:id="deleteAppointmentsTable" layoutX="755.0" layoutY="561.0" mnemonicParsing="false" onAction="#deleteAppointmentsTableListener" prefHeight="25.0" prefWidth="64.0" text="Delete" />
+      <Button fx:id="viewAllAppointmentsButton" layoutX="71.0" layoutY="561.0" mnemonicParsing="false" onAction="#viewAllAppointmentsButtonListener" prefHeight="25.0" prefWidth="182.0" text="View All Appointments" />
+      <Button fx:id="generateReportButton" layoutX="609.0" layoutY="616.0" mnemonicParsing="false" onAction="#generateReportButtonListener" prefHeight="25.0" prefWidth="125.0" text="Generate Report" />
+      <Button fx:id="exitButton" layoutX="755.0" layoutY="616.0" mnemonicParsing="false" onAction="#exitButtonListener" prefHeight="25.0" prefWidth="79.0" text="Exit" />
+   </children>
+</Pane>
